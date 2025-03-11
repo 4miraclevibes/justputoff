@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Innovative Tech Solutions</title>
+  <title>CV Innovative Tech Solutions</title>
   <meta name="description" content="Kami adalah software house yang menawarkan solusi teknologi.">
   <meta name="keywords" content="Software House, Solusi Teknologi, Produk">
 
@@ -40,9 +40,6 @@
 <style>
   .project-caption {
       margin-top: 15px; /* Menambahkan jarak atas */
-  }
-  .project-title {
-      margin-bottom: 10px; /* Menambahkan jarak bawah */
   }
   .carousel-item {
     width: 100%;
@@ -238,12 +235,6 @@
     opacity: 1;
 }
 
-/* Content Styling */
-.project-title {
-    color: #2d3436;
-    font-size: 1.4rem;
-}
-
 .project-meta {
     font-size: 0.9rem;
     color: #636e72;
@@ -274,7 +265,7 @@
 }
 
 .btn-demo:hover {
-    background-color: #f8f9fa;
+    background-color: #16b428;
 }
 
 /* Styling untuk stats carousel */
@@ -494,6 +485,83 @@
         padding: 8px;
     }
 }
+
+/* Perbaikan styling untuk FAQ */
+.faq-item {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    cursor: pointer; /* Tambahkan cursor pointer untuk seluruh item */
+}
+
+.faq-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    cursor: pointer;
+}
+
+.faq-title {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex: 1;
+}
+
+.faq-toggle {
+    transition: transform 0.3s ease;
+    color: #4e54c8;
+    margin-left: 15px;
+}
+
+.faq-item.faq-active .faq-toggle {
+    transform: translateY(-50%) rotate(90deg);
+}
+
+.faq-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    margin-top: 0;
+    opacity: 0;
+}
+
+.faq-item.faq-active .faq-content {
+    max-height: 1000px; /* Nilai maksimum yang cukup besar */
+    margin-top: 15px;
+    opacity: 1;
+    transition: max-height 0.3s ease-in, opacity 0.3s ease-in;
+}
+
+/* Styling untuk list dalam FAQ */
+.faq-content ul {
+    margin-top: 10px;
+}
+
+.faq-content ul li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.faq-content ul li i {
+    flex-shrink: 0;
+    margin-right: 10px;
+}
+
+.badge-left {
+    left: 20px;
+    right: auto;
+}
+
+.badge-right {
+    right: 20px;
+    left: auto;
+}
 </style>
 
 <body class="index-page">
@@ -532,11 +600,13 @@
             <img src="{{ asset('landing/assets/img/balian.png') }}" class="img-fluid animated" alt="">
           </div>
 
-          <div class="col-lg-6  d-flex flex-column justify-content-center" data-aos="fade-in">
-            <h1>Solusi Teknologi Terbaik untuk Anda</h1>
-            <p>Kami adalah software house yang menawarkan solusi teknologi bagi pelanggan kami, serta memiliki produk kami sendiri.</p>
-            <div class="d-flex">
-              <a href="#projects" class="btn-get-started">Mulai Sekarang</a>
+          <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-in">
+            <h1>Inovasi Digital untuk Masa Depan yang Lebih Baik</h1>
+            <p class="mb-4">CV Innovative Tech Solutions adalah software house yang digerakkan oleh semangat mahasiswa dengan visi menghadirkan solusi teknologi inovatif. Kami menggabungkan kreativitas muda dengan standar profesional untuk memberikan layanan pengembangan perangkat lunak yang berkualitas.</p>
+            <p class="mb-4">Dengan legalitas penuh sebagai CV dan didukung oleh tim yang berdedikasi, kami siap membantu mewujudkan transformasi digital untuk bisnis Anda.</p>
+            <div class="d-flex gap-3">
+              <a href="#projects" class="btn-get-started">Lihat Portfolio</a>
+              <a href="#about" class="btn-get-started btn-secondary">Tentang Kami</a>
             </div>
           </div>
 
@@ -568,9 +638,15 @@
 
           <div class="col-xl-5 content">
             <h3>Tentang Kami</h3>
-            <h2>Kami adalah Software House yang Inovatif</h2>
-            <p>Kami menyediakan solusi teknologi yang dapat disesuaikan dengan kebutuhan bisnis Anda. Dengan pengalaman dan keahlian kami, kami siap membantu Anda mencapai tujuan bisnis Anda.</p>
-            <a href="#" class="read-more"><span>Baca Selengkapnya</span><i class="bi bi-arrow-right"></i></a>
+            <h2>CV Innovative Tech Solutions - Memimpin Inovasi Digital</h2>
+            <p class="mb-4">Sebagai software house yang digerakkan oleh semangat mahasiswa berprestasi, kami menggabungkan kreativitas muda dengan standar profesional untuk menghadirkan solusi teknologi yang inovatif dan terpercaya.</p>
+            <p class="mb-4">Dengan legalitas penuh sebagai CV dan didukung oleh tim yang berdedikasi, kami berkomitmen untuk:</p>
+            <ul class="list-unstyled mb-4">
+              <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Menghadirkan solusi teknologi berkualitas tinggi</li>
+              <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Memberikan layanan yang tepat waktu dan efisien</li>
+              <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Menjamin kepuasan klien dengan hasil terbaik</li>
+            </ul>
+            <a href="#contact" class="read-more"><span>Mulai Konsultasi Gratis</span><i class="bi bi-arrow-right"></i></a>
           </div>
 
           <div class="col-xl-7">
@@ -579,38 +655,34 @@
               <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
                 <div class="icon-box">
                   <i class="bi bi-file-earmark-text"></i>
-                  <h3>Analisis Kebutuhan</h3>
-                  <p>Kami mengembangkan perangkat lunak yang sesuai dengan kebutuhan spesifik Anda.</p>
+                  <h3>Analisis & Perencanaan</h3>
+                  <p>Tim ahli kami melakukan analisis mendalam untuk memahami kebutuhan bisnis Anda dan merancang solusi yang tepat sasaran dengan metodologi Agile.</p>
                 </div>
               </div>
-              <!-- End Icon Box -->
 
               <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
                 <div class="icon-box">
                   <i class="bi bi-code-slash"></i>
-                  <h3>Pengembangan Aplikasi</h3>
-                  <p>Kami menawarkan berbagai solusi teknologi untuk meningkatkan efisiensi bisnis Anda.</p>
+                  <h3>Pengembangan Modern</h3>
+                  <p>Menggunakan teknologi terkini dan best practices dalam pengembangan aplikasi untuk menghasilkan produk yang scalable dan mudah dimaintain.</p>
                 </div>
-              </div> 
-              <!-- End Icon Box -->
+              </div>
 
               <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
                 <div class="icon-box">
-                  <i class="bi bi-cloud"></i>
-                  <h3>Solusi Cloud</h3>
-                  <p>Keamanan data Anda adalah prioritas kami, kami menggunakan teknologi terbaru untuk melindungi informasi Anda.</p>
+                  <i class="bi bi-shield-check"></i>
+                  <h3>Keamanan & Performa</h3>
+                  <p>Menerapkan standar keamanan tinggi dan optimasi performa untuk memastikan aplikasi Anda berjalan dengan aman dan efisien.</p>
                 </div>
               </div>
-               <!-- End Icon Box -->
 
               <div class="col-md-6" data-aos="fade-up" data-aos-delay="500">
                 <div class="icon-box">
-                  <i class="bi bi-person-lines-fill"></i>
-                  <h3>Konsultasi IT</h3>
-                  <p>Kami menyediakan dukungan pelanggan yang responsif untuk memastikan kepuasan Anda.</p>
+                  <i class="bi bi-headset"></i>
+                  <h3>Dukungan Prima</h3>
+                  <p>Menyediakan layanan support 24/7 dan maintenance berkala untuk memastikan sistem Anda selalu dalam kondisi optimal.</p>
                 </div>
-              </div> 
-              <!-- End Icon Box -->
+              </div>
 
             </div>
           </div>
@@ -824,10 +896,15 @@
             @foreach ($projects as $project)
                 <div class="col-lg-6 col-md-12 mb-4 project-item">
                     <div class="project-card shadow hover-effect rounded position-relative overflow-hidden">
-                        <!-- Badge dengan animasi -->
-                        <span class="badge {{ $project->category == 'product' ? 'bg-primary' : 'bg-success' }} position-absolute badge-corner">
+                        <!-- Badge kategori di kiri -->
+                        <span class="badge {{ $project->category == 'product' ? 'bg-primary' : 'bg-success' }} position-absolute badge-corner badge-left">
                             <i class="bi {{ $project->category == 'product' ? 'bi-box-seam' : 'bi-briefcase' }}"></i>
                             {{ $project->category == 'product' ? 'Product' : 'Project' }}
+                        </span>
+                        <!-- Badge nama di kanan -->
+                        <span class="badge {{ $project->category == 'product' ? 'bg-success' : 'bg-primary' }} position-absolute badge-corner badge-right">
+                            <i class="bi {{ $project->category == 'product' ? 'bi-box-seam' : 'bi-briefcase' }}"></i>
+                            {{ Str::words($project->name, 4, '...') }}
                         </span>
                         
                         <!-- Gambar dengan efek hover -->
@@ -843,28 +920,18 @@
 
                         <!-- Konten dengan styling yang lebih baik -->
                         <div class="project-caption p-4">
-                            <h4 class="project-title fw-bold mb-2">{{ Str::words($project->name, 4, '...') }}</h4>
-                            
-                            <div class="project-meta d-flex align-items-center mb-3">
-                                <span class="date-badge">
-                                    <i class="bi bi-calendar3 me-1"></i>
-                                    {{ \Carbon\Carbon::parse($project->created_at)->format('d M Y') }}
-                                </span>
-                            </div>
-
+                            <p class="project-description">{!! Str::words($project->description, 15, '...') !!}</p>
                             <!-- Tambahkan bagian teknologi -->
                             <div class="project-technologies mb-3">
-                                @foreach($project->technologies as $technology)
-                                <span class="badge bg-primary">
-                                  <i class="{{ $technology->icon }} fs-4"></i>
+                              @foreach($project->technologies as $technology)
+                              <span class="badge bg-primary">
+                                <i class="{{ $technology->icon }} fs-4"></i>
                               </span>
                                 @endforeach
                             </div>
-
-                            <p class="project-description mb-4">{!! Str::words($project->description, 5, '...') !!}</p>
                             
                             <div class="project-actions">
-                                <a href="{{ route('landing.show', $project->id) }}" class="btn btn-primary btn-view">
+                                <a href="{{ route('landing.show', $project->id) }}" class="btn btn-secondary btn-view">
                                     <i class="bi bi-eye me-2"></i>Lihat Detail
                                 </a>
                                 <a href="{{ $project->demo }}" class="btn btn-outline-primary ms-2 btn-demo" target="_blank">
@@ -900,15 +967,15 @@
             <div class="member">
               <div class="pic"><img src="{{ asset('landing/assets/img/frame13.jpg') }}" class="img-fluid" alt=""></div>
               <div class="member-info">
-                <h4>Muhammad Fadli</h4>
-                <span>Chief Executive Officer</span>
-                <span>Chief Executive Officer</span>
-                <span>Chief Executive Officer</span>
+                <h4>Kholid Hasibuan</h4>
+                <span>Director</span>
+                <span>Full Stack Developer</span>
+                <span>Project Leader</span>
                 <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
+                  <a href="https://x.com/justputoff"><i class="bi bi-twitter-x"></i></a>
+                  <a href="https://www.facebook.com/justputoff"><i class="bi bi-facebook"></i></a>
+                  <a href="https://www.instagram.com/justputoff"><i class="bi bi-instagram"></i></a>
+                  <a href="https://www.linkedin.com/in/justputoff"><i class="bi bi-linkedin"></i></a>
                 </div>
               </div>
             </div>
@@ -973,54 +1040,106 @@
             <div class="content text-center mb-5" data-aos="fade-up" data-aos-delay="100">
               <h3><span>Pertanyaan yang </span><strong>Sering Diajukan</strong></h3>
               <p>
-                Berikut adalah beberapa pertanyaan yang sering diajukan oleh klien kami mengenai layanan pengembangan software dan solusi teknologi yang kami tawarkan
+                Berikut adalah beberapa pertanyaan umum tentang CV Innovative Tech Solutions dan layanan pengembangan software yang kami tawarkan
               </p>
             </div>
 
             <div class="faq-container" data-aos="fade-up" data-aos-delay="200">
-              <div class="faq-item faq-active">
-                <i class="faq-icon bi bi-question-circle"></i>
-                <h3>Berapa lama waktu yang dibutuhkan untuk mengembangkan sebuah aplikasi?</h3>
-                <div class="faq-content">
-                  <p>Waktu pengembangan bervariasi tergantung pada kompleksitas dan skala proyek. Untuk aplikasi sederhana bisa memakan waktu 2-3 bulan, sedangkan untuk sistem yang lebih kompleks bisa membutuhkan 6-12 bulan. Kami selalu memberikan estimasi waktu yang detail setelah melakukan analisis kebutuhan dengan klien.</p>
+              <div class="faq-item">
+                <div class="faq-header">
+                    <div class="faq-title">
+                        <i class="faq-icon bi bi-question-circle"></i>
+                        <h3>Mengapa harus memilih CV Innovative Tech Solutions?</h3>
+                    </div>
+                    <i class="faq-toggle bi bi-chevron-right"></i>
                 </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
+                <div class="faq-content">
+                    <p>Sebagai software house yang dijalankan oleh mahasiswa berprestasi, kami menawarkan:</p>
+                    <ul class="list-unstyled ps-3">
+                        <li><i class="bi bi-check2-circle text-primary me-2"></i>Kreativitas dan ide segar dalam pengembangan solusi digital</li>
+                        <li><i class="bi bi-check2-circle text-primary me-2"></i>Harga yang lebih kompetitif dengan kualitas terjamin</li>
+                        <li><i class="bi bi-check2-circle text-primary me-2"></i>Legalitas penuh sebagai CV resmi</li>
+                        <li><i class="bi bi-check2-circle text-primary me-2"></i>Tim yang update dengan teknologi terkini</li>
+                    </ul>
+                </div>
               </div>
 
               <div class="faq-item">
-                <i class="faq-icon bi bi-question-circle"></i>
-                <h3>Bagaimana proses pengembangan software di Innovative Tech Solutions?</h3>
-                <div class="faq-content">
-                  <p>Kami menggunakan metodologi Agile dalam pengembangan software dengan tahapan: 1) Analisis kebutuhan & perencanaan, 2) Desain sistem & UI/UX, 3) Pengembangan & testing berkala, 4) Quality Assurance, 5) Deployment, dan 6) Maintenance. Klien dilibatkan dalam setiap tahap untuk memastikan hasil sesuai kebutuhan.</p>
+                <div class="faq-header">
+                    <div class="faq-title">
+                        <i class="faq-icon bi bi-question-circle"></i>
+                        <h3>Bagaimana proses pengembangan software di tim kami?</h3>
+                    </div>
+                    <i class="faq-toggle bi bi-chevron-right"></i>
                 </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
+                <div class="faq-content">
+                    <p>Kami menerapkan metodologi Agile yang fleksibel dengan tahapan:</p>
+                    <ul class="list-unstyled ps-3">
+                        <li><i class="bi bi-1-circle text-primary me-2"></i>Konsultasi & analisis kebutuhan mendalam</li>
+                        <li><i class="bi bi-2-circle text-primary me-2"></i>Perancangan UI/UX yang modern</li>
+                        <li><i class="bi bi-3-circle text-primary me-2"></i>Pengembangan dengan teknologi terkini</li>
+                        <li><i class="bi bi-4-circle text-primary me-2"></i>Testing & quality assurance</li>
+                        <li><i class="bi bi-5-circle text-primary me-2"></i>Deployment & maintenance berkelanjutan</li>
+                    </ul>
+                </div>
               </div>
 
               <div class="faq-item">
-                <i class="faq-icon bi bi-question-circle"></i>
-                <h3>Apakah ada layanan maintenance setelah aplikasi selesai dikembangkan?</h3>
-                <div class="faq-content">
-                  <p>Ya, kami menyediakan layanan maintenance dan support untuk memastikan aplikasi Anda tetap berjalan optimal. Paket maintenance kami mencakup monitoring performa, backup rutin, pembaruan keamanan, perbaikan bug, dan dukungan teknis. Kami juga menawarkan SLA (Service Level Agreement) yang dapat disesuaikan dengan kebutuhan bisnis Anda.</p>
+                <div class="faq-header">
+                    <div class="faq-title">
+                        <i class="faq-icon bi bi-question-circle"></i>
+                        <h3>Apakah tim mahasiswa dapat menjamin kualitas produk?</h3>
+                    </div>
+                    <i class="faq-toggle bi bi-chevron-right"></i>
                 </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
+                <div class="faq-content">
+                    <p>Absolut! Tim kami terdiri dari mahasiswa berprestasi dengan pengalaman nyata dalam pengembangan software. Kami memiliki:</p>
+                    <ul class="list-unstyled ps-3">
+                        <li><i class="bi bi-shield-check text-primary me-2"></i>Portfolio proyek yang telah terbukti</li>
+                        <li><i class="bi bi-shield-check text-primary me-2"></i>Sertifikasi di bidang teknologi</li>
+                        <li><i class="bi bi-shield-check text-primary me-2"></i>Pengalaman magang di perusahaan teknologi</li>
+                        <li><i class="bi bi-shield-check text-primary me-2"></i>Mentor profesional yang membimbing</li>
+                    </ul>
+                </div>
               </div>
 
               <div class="faq-item">
-                <i class="faq-icon bi bi-question-circle"></i>
-                <h3>Bagaimana dengan keamanan data dalam aplikasi yang dikembangkan?</h3>
-                <div class="faq-content">
-                  <p>Keamanan adalah prioritas utama kami. Kami menerapkan standar keamanan industri terkini seperti enkripsi data, autentikasi multi-factor, regular security audit, dan kepatuhan terhadap regulasi data (seperti GDPR jika diperlukan). Tim kami juga melakukan penetration testing secara berkala untuk memastikan keamanan sistem.</p>
+                <div class="faq-header">
+                    <div class="faq-title">
+                        <i class="faq-icon bi bi-question-circle"></i>
+                        <h3>Bagaimana dengan ketersediaan tim untuk support?</h3>
+                    </div>
+                    <i class="faq-toggle bi bi-chevron-right"></i>
                 </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
+                <div class="faq-content">
+                    <p>Meski tim kami terdiri dari mahasiswa aktif, kami memiliki sistem kerja yang terorganisir:</p>
+                    <ul class="list-unstyled ps-3">
+                        <li><i class="bi bi-clock text-primary me-2"></i>Dukungan teknis 12 jam setiap hari kerja</li>
+                        <li><i class="bi bi-people text-primary me-2"></i>Tim yang bekerja dalam shift untuk memastikan responsivitas</li>
+                        <li><i class="bi bi-chat-dots text-primary me-2"></i>Sistem ticketing untuk melacak dan menyelesaikan masalah</li>
+                        <li><i class="bi bi-calendar-check text-primary me-2"></i>Maintenance terjadwal di luar jam kuliah</li>
+                    </ul>
+                </div>
               </div>
 
               <div class="faq-item">
-                <i class="faq-icon bi bi-question-circle"></i>
-                <h3>Apakah saya bisa melakukan kostumisasi setelah aplikasi selesai?</h3>
-                <div class="faq-content">
-                  <p>Tentu saja! Kami membangun aplikasi dengan arsitektur modular yang memungkinkan pengembangan dan kostumisasi di masa depan. Anda dapat menambah fitur baru atau memodifikasi yang ada sesuai dengan perkembangan kebutuhan bisnis Anda. Tim kami siap membantu dalam proses pengembangan berkelanjutan.</p>
+                <div class="faq-header">
+                    <div class="faq-title">
+                        <i class="faq-icon bi bi-question-circle"></i>
+                        <h3>Apa keunggulan layanan maintenance kami?</h3>
+                    </div>
+                    <i class="faq-toggle bi bi-chevron-right"></i>
                 </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
+                <div class="faq-content">
+                    <p>Paket maintenance kami dirancang komprehensif namun terjangkau, mencakup:</p>
+                    <ul class="list-unstyled ps-3">
+                        <li><i class="bi bi-gear text-primary me-2"></i>Pemantauan performa sistem 24/7</li>
+                        <li><i class="bi bi-cloud-arrow-up text-primary me-2"></i>Backup data otomatis dan terjadwal</li>
+                        <li><i class="bi bi-shield text-primary me-2"></i>Update keamanan berkala</li>
+                        <li><i class="bi bi-graph-up text-primary me-2"></i>Laporan performa bulanan</li>
+                        <li><i class="bi bi-tools text-primary me-2"></i>Perbaikan bug dan optimasi sistem</li>
+                    </ul>
+                </div>
               </div>
             </div>
           </div>
@@ -1032,70 +1151,68 @@
   </main>
 
   <footer id="footer" class="footer dark-background">
-
     <div class="container footer-top">
-      <div class="row gy-4">
-        <div class="col-lg-4 col-md-6 footer-about">
-          <a href="index.html" class="logo d-flex align-items-center">
-            <span class="sitename">Software House</span>
-          </a>
-          <div class="footer-contact pt-3">
-            <p>Alamat Perusahaan</p>
-            <p>Kota, Kode Pos</p>
-            <p class="mt-3"><strong>Telepon:</strong> <span>+62 1234 5678</span></p>
-            <p><strong>Email:</strong> <span>info@softwarehouse.com</span></p>
-          </div>
-          <div class="social-links d-flex mt-4">
-            <a href=""><i class="bi bi-twitter-x"></i></a>
-            <a href=""><i class="bi bi-facebook"></i></a>
-            <a href=""><i class="bi bi-instagram"></i></a>
-            <a href=""><i class="bi bi-linkedin"></i></a>
-          </div>
-        </div>
+        <div class="row gy-4">
+            <div class="col-lg-4 col-md-6 footer-about">
+                <a href="/" class="logo d-flex align-items-center">
+                    <span class="sitename">CV Innovative Tech Solutions</span>
+                </a>
+                <div class="footer-contact pt-3">
+                    <p>Jl. Sisingamangaraja No. 12</p>
+                    <p>Medan, Sumatera Utara 20217</p>
+                    <p class="mt-3"><strong>Telepon:</strong> <span>+62 821-6012-6862</span></p>
+                    <p><strong>Email:</strong> <span>hello@innovativetech.id</span></p>
+                </div>
+                <div class="social-links d-flex mt-4">
+                    <a href="https://x.com/innovativetech" target="_blank"><i class="bi bi-twitter-x"></i></a>
+                    <a href="https://www.instagram.com/innovativetech.id" target="_blank"><i class="bi bi-instagram"></i></a>
+                    <a href="https://www.linkedin.com/company/innovative-tech-solutions-id" target="_blank"><i class="bi bi-linkedin"></i></a>
+                    <a href="https://github.com/innovative-tech" target="_blank"><i class="bi bi-github"></i></a>
+                </div>
+            </div>
 
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Useful Links</h4>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Terms of service</a></li>
-            <li><a href="#">Privacy policy</a></li>
-          </ul>
-        </div>
+            <div class="col-lg-2 col-md-3 footer-links">
+                <h4>Tautan Cepat</h4>
+                <ul>
+                    <li><a href="/">Beranda</a></li>
+                    <li><a href="#about">Tentang Kami</a></li>
+                    <li><a href="#features">Layanan</a></li>
+                    <li><a href="#projects">Portfolio</a></li>
+                    <li><a href="#team">Tim Kami</a></li>
+                </ul>
+            </div>
 
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Our Services</h4>
-          <ul>
-            <li><a href="#">Web Design</a></li>
-            <li><a href="#">Web Development</a></li>
-            <li><a href="#">Product Management</a></li>
-            <li><a href="#">Marketing</a></li>
-            <li><a href="#">Graphic Design</a></li>
-          </ul>
-        </div>
+            <div class="col-lg-2 col-md-3 footer-links">
+                <h4>Layanan Kami</h4>
+                <ul>
+                    <li><a href="#features">Pengembangan Web</a></li>
+                    <li><a href="#features">Aplikasi Mobile</a></li>
+                    <li><a href="#features">Desain UI/UX</a></li>
+                    <li><a href="#features">Konsultasi IT</a></li>
+                    <li><a href="#features">Solusi Cloud</a></li>
+                </ul>
+            </div>
 
-        <div class="col-lg-4 col-md-12 footer-newsletter">
-          <h4>Our Newsletter</h4>
-          <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
-          <form action="forms/newsletter.php" method="post" class="php-email-form">
-            <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Subscribe"></div>
-            <div class="loading">Loading</div>
-            <div class="error-message"></div>
-            <div class="sent-message">Your subscription request has been sent. Thank you!</div>
-          </form>
+            <div class="col-lg-4 col-md-12 footer-newsletter">
+                <h4>Newsletter Kami</h4>
+                <p>Berlangganan newsletter kami untuk mendapatkan informasi terbaru tentang teknologi dan penawaran khusus!</p>
+                <form action="#" method="post" class="php-email-form">
+                    @csrf
+                    <div class="newsletter-form">
+                        <input type="email" name="email" placeholder="Masukkan email Anda">
+                        <input type="submit" value="Berlangganan">
+                    </div>
+                    <div class="loading">Loading</div>
+                    <div class="error-message"></div>
+                    <div class="sent-message">Terima kasih telah berlangganan newsletter kami!</div>
+                </form>
+            </div>
         </div>
-
-      </div>
     </div>
 
     <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">Software House</strong> <span>All Rights Reserved</span></p>
-      <div class="credits">
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> Distributed By <a href="https://themewagon.com">ThemeWagon</a>
-      </div>
+        <p>© <span>Copyright</span> <strong class="px-1">CV Innovative Tech Solutions</strong> <span>2024. All Rights Reserved</span></p>
     </div>
-
   </footer>
 
   <!-- Scroll Top -->
@@ -1179,6 +1296,47 @@
             }
             document.body.style.overflow = "auto";
         }
+    });
+
+    // Perbaikan script untuk FAQ
+    document.addEventListener('DOMContentLoaded', function() {
+        const faqItems = document.querySelectorAll('.faq-item');
+        
+        faqItems.forEach(item => {
+            const header = item.querySelector('.faq-header');
+            const content = item.querySelector('.faq-content');
+            const toggle = item.querySelector('.faq-toggle');
+            
+            function toggleFaq() {
+                // Tutup semua item lain
+                faqItems.forEach(otherItem => {
+                    if (otherItem !== item && otherItem.classList.contains('faq-active')) {
+                        otherItem.classList.remove('faq-active');
+                        const otherContent = otherItem.querySelector('.faq-content');
+                        const otherToggle = otherItem.querySelector('.faq-toggle');
+                        otherContent.style.maxHeight = '0';
+                        otherContent.style.opacity = '0';
+                        otherToggle.style.transform = 'rotate(0deg)';
+                    }
+                });
+                
+                // Toggle item yang diklik
+                const isActive = item.classList.toggle('faq-active');
+                
+                if (isActive) {
+                    content.style.maxHeight = content.scrollHeight + 'px';
+                    content.style.opacity = '1';
+                    toggle.style.transform = 'rotate(90deg)';
+                } else {
+                    content.style.maxHeight = '0';
+                    content.style.opacity = '0';
+                    toggle.style.transform = 'rotate(0deg)';
+                }
+            }
+            
+            // Tambahkan event listener untuk seluruh item
+            item.addEventListener('click', toggleFaq);
+        });
     });
   </script>
 
