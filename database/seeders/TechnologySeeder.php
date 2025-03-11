@@ -61,7 +61,14 @@ class TechnologySeeder extends Seeder
                 'name' => 'IOS',
                 'icon' => 'bx bxl-apple',
             ],
-            
+            [
+                'name' => 'Figma',
+                'icon' => 'bx bxl-figma',
+            ],
+            [
+                'name' => 'Git',
+                'icon' => 'bx bxl-git',
+            ],
         ];
         foreach ($technologies as $technology) {
             Technology::create($technology);
