@@ -114,7 +114,7 @@
             <!-- Project Images Gallery -->
             <div class="swiper project-images-slider">
               <div class="swiper-wrapper align-items-center">
-                <div class="swiper-slide">
+                <div class="swiper-slide card">
                   <img src="{{ asset('storage/' . $project->thumbnail) }}" alt="{{ $project->name }}" class="img-fluid">
                 </div>
                 @foreach($project->projectImages as $image)
@@ -131,6 +131,7 @@
             <div class="project-info">
               <h3>Informasi Project</h3>
               <ul>
+                <li><strong>Nama Project</strong>: {{ $project->name }}</li>
                 <li><strong>Kategori</strong>: {{ $project->category }}</li>
                 <li><strong>Status</strong>: <span class="badge {{ $project->status == 'done' ? 'bg-success' : 'bg-warning' }}">{{ ucfirst($project->status) }}</span></li>
                 <li><strong>Client</strong>: {{ $project->user->name }}</li>
@@ -154,7 +155,6 @@
           <!-- Project Description -->
           <div class="col-lg-12 mt-5">
             <div class="project-description">
-              <h2>{{ $project->name }}</h2>
               <div class="content">
                 {!! $project->description !!}
               </div>
