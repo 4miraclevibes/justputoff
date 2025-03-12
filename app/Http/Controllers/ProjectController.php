@@ -28,7 +28,6 @@ class ProjectController extends Controller
             'description' => 'required',
             'thumbnail' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
             'category' => 'required',
-            'status' => 'required',
             'images.*' => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048',
             'technologies' => 'array|nullable',
             'demo' => 'nullable',
