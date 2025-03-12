@@ -160,7 +160,7 @@
     position: absolute;
     top: 20px;
     right: 20px;
-    transform: none; /* Menghilangkan rotasi */
+    transform: none;
     padding: 8px 16px;
     font-size: 0.85rem;
     z-index: 2;
@@ -170,6 +170,8 @@
     align-items: center;
     gap: 6px;
     transition: all 0.3s ease;
+    min-width: 120px;
+    justify-content: center;
 }
 
 .badge-corner:hover {
@@ -561,6 +563,14 @@
 .badge-right {
     right: 20px;
     left: auto;
+}
+
+/* Responsif untuk mobile */
+@media (max-width: 768px) {
+    .badge-corner {
+        min-width: 100px;
+        font-size: 0.75rem;
+    }
 }
 </style>
 
