@@ -930,7 +930,7 @@
                         <!-- Badge kategori di kiri -->
                         <span class="badge {{ $project->category == 'product' ? 'bg-primary' : 'bg-success' }} position-absolute badge-corner badge-left">
                             <i class="bi {{ $project->category == 'product' ? 'bi-box-seam' : 'bi-briefcase' }}"></i>
-                            {{ $project->category == 'product' ? 'Product' : 'Project' }} ~ {{ $project->status }}
+                            {{ $project->category == 'product' ? 'Product' : 'Project' }} <span class="text-muted"> ~ </span> <span class="badge {{ $project->status == 'done' ? 'bg-success' : 'bg-warning' }}">{{ $project->status }}</span>
                         </span>
                         <!-- Badge nama di kanan -->
                         <span class="badge {{ $project->category == 'product' ? 'bg-success' : 'bg-primary' }} position-absolute badge-corner badge-right">
