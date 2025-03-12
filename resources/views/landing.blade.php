@@ -159,41 +159,62 @@
 .badge-corner {
     position: absolute;
     top: 20px;
-    right: 20px;
-    transform: none;
     padding: 8px 16px;
     font-size: 0.85rem;
     z-index: 2;
-    border-radius: 20px;
+    border-radius: 30px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-    display: flex;
+    display: inline-flex;
     align-items: center;
     gap: 6px;
     transition: all 0.3s ease;
-    min-width: 120px;
+    min-width: 100px;
     justify-content: center;
+    font-weight: 500;
+    text-transform: capitalize;
+    background: rgba(255, 255, 255, 0.9) !important; /* Warna background putih transparan */
 }
 
-.badge-corner:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+.badge-left {
+    left: 20px;
+    right: auto;
+}
+
+.badge-right {
+    right: 20px;
+    left: auto;
 }
 
 /* Styling untuk badge product */
 .badge-corner.bg-primary {
-    background: linear-gradient(45deg, #4e54c8, #8f94fb) !important;
+    color: #4e54c8 !important; /* Warna teks biru */
     border: none;
 }
 
 /* Styling untuk badge project */
 .badge-corner.bg-success {
-    background: linear-gradient(45deg, #11998e, #38ef7d) !important;
+    color: #28a745 !important; /* Warna teks hijau */
     border: none;
 }
 
 /* Icon dalam badge */
 .badge-corner i {
     font-size: 1rem;
+}
+
+/* Hover effect */
+.badge-corner:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+/* Responsif untuk mobile */
+@media (max-width: 768px) {
+    .badge-corner {
+        min-width: 90px;
+        font-size: 0.75rem;
+        padding: 6px 12px;
+    }
 }
 
 /* Image Styling */
@@ -930,7 +951,7 @@
 
                         <!-- Konten dengan styling yang lebih baik -->
                         <div class="project-caption p-4">
-                            <p class="project-description">{!! Str::words($project->description, 15, '...') !!}</p>
+                            <p class="project-description">{!! Str::words($project->description, 10, '...') !!}</p>
                             <!-- Tambahkan bagian teknologi -->
                             <div class="project-technologies mb-3">
                               @foreach($project->technologies as $technology)
