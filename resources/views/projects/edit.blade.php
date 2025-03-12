@@ -165,7 +165,7 @@
                                 required>
                             <option value="">Pilih Status</option>
                             <option value="pending" {{ old('status', $project->status) == 'pending' ? 'selected' : '' }}>Pending</option>
-                            <option value="on_going" {{ old('status', $project->status) == 'on_going' ? 'selected' : '' }}>On Going</option>
+                            <option value="progress" {{ old('status', $project->status) == 'progress' ? 'selected' : '' }}>Progress</option>
                             <option value="done" {{ old('status', $project->status) == 'done' ? 'selected' : '' }}>Done</option>
                         </select>
                         @error('status')
