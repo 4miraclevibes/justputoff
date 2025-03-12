@@ -16,7 +16,6 @@
           <tr class="text-nowrap table-dark">
             <th class="text-white">No</th>
             <th class="text-white">Name</th>
-            <th class="text-white">Description</th>
             <th class="text-white">Thumbnail</th>
             <th class="text-white">Technologies</th>
             <th class="text-white">Created By</th>
@@ -28,7 +27,6 @@
           <tr>
             <th scope="row">{{ $loop->iteration }}</th>
             <td>{{ $project->name }}</td>
-            <td>{!! \Str::words(strip_tags($project->description), 5, '...') !!}</td>
             <td>
               @if($project->thumbnail)
                 <img src="{{ Storage::url($project->thumbnail) }}" alt="thumbnail" width="50">
