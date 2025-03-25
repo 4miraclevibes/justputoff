@@ -995,28 +995,26 @@
         <div class="row gy-5">
 
           <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="member">
-              <div class="pic"><img src="{{ asset('landing/assets/img/frame13.jpg') }}" class="img-fluid" alt=""></div>
+            <div class="member card">
+              <div class="pic"><img src="{{ asset('assets/img/Ucok.png') }}" class="img-fluid" alt=""></div>
               <div class="member-info">
                 <h4>Kholid Hasibuan</h4>
-                <span>Director</span>
-                <span>Full Stack Developer</span>
-                <span>Project Leader</span>
+                <span>Director / BE Dev</span>
                 <div class="social">
-                  <a href="https://x.com/justputoff"><i class="bi bi-twitter-x"></i></a>
-                  <a href="https://www.facebook.com/justputoff"><i class="bi bi-facebook"></i></a>
-                  <a href="https://www.instagram.com/justputoff"><i class="bi bi-instagram"></i></a>
-                  <a href="https://www.linkedin.com/in/justputoff"><i class="bi bi-linkedin"></i></a>
+                  <a href="https://www.linkedin.com/in/justputoff" target="_blank"><i class="bi bi-linkedin"></i></a>
+                  <a href="https://www.facebook.com/justputoff" target="_blank"><i class="bi bi-facebook"></i></a>
+                  <a href="https://www.instagram.com/justputoff" target="_blank"><i class="bi bi-instagram"></i></a>
+                  <a href="https://x.com/justputoff" target="_blank"><i class="bi bi-twitter-x"></i></a>
                 </div>
               </div>
             </div>
           </div>
           <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="member">
-              <div class="pic"><img src="{{ asset('landing/assets/img/frame13.jpg') }}" class="img-fluid" alt=""></div>
+            <div class="member card">
+              <div class="pic"><img src="{{ asset('assets/img/Mus.png') }}" class="img-fluid" alt=""></div>
               <div class="member-info">
-                <h4>Muhammad Fadli</h4>
-                <span>Chief Executive Officer</span>
+                <h4>Khairul Mustafa</h4>
+                <span>UI / UX Designer</span>
                 <div class="social">
                   <a href=""><i class="bi bi-twitter-x"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
@@ -1027,11 +1025,11 @@
             </div>
           </div>
           <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="member">
-              <div class="pic"><img src="{{ asset('landing/assets/img/frame13.jpg') }}" class="img-fluid" alt=""></div>
+            <div class="member card">
+              <div class="pic"><img src="{{ asset('assets/img/Nanda.png') }}" class="img-fluid" alt=""></div>
               <div class="member-info">
-                <h4>Muhammad Fadli</h4>
-                <span>Chief Executive Officer</span>
+                <h4>Gusti Nanda</h4>
+                <span>Media Sosial Specialist</span>
                 <div class="social">
                   <a href=""><i class="bi bi-twitter-x"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
@@ -1042,11 +1040,11 @@
             </div>
           </div>
           <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="member">
-              <div class="pic"><img src="{{ asset('landing/assets/img/frame13.jpg') }}" class="img-fluid" alt=""></div>
+            <div class="member card">
+              <div class="pic"><img src="{{ asset('assets/img/Rian.png ') }}" class="img-fluid" alt=""></div>
               <div class="member-info">
-                <h4>Muhammad Fadli</h4>
-                <span>Chief Executive Officer</span>
+                <h4>Rahmad Avriantias Aulia</h4>
+                <span>FE Dev / Mobile</span>
                 <div class="social">
                   <a href=""><i class="bi bi-twitter-x"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
