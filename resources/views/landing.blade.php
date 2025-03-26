@@ -1016,10 +1016,10 @@
                 <h4>Khairul Mustafa</h4>
                 <span>UI / UX Designer</span>
                 <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
+                  <a href="https://www.linkedin.com/in/justputoff" target="_blank"><i class="bi bi-linkedin"></i></a>
+                  <a href="https://www.facebook.com/justputoff" target="_blank"><i class="bi bi-facebook"></i></a>
+                  <a href="https://www.instagram.com/justputoff" target="_blank"><i class="bi bi-instagram"></i></a>
+                  <a href="https://x.com/justputoff" target="_blank"><i class="bi bi-twitter-x"></i></a>
                 </div>
               </div>
             </div>
@@ -1031,10 +1031,10 @@
                 <h4>Gusti Nanda</h4>
                 <span>Media Sosial Specialist</span>
                 <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
+                  <a href="https://www.linkedin.com/in/justputoff" target="_blank"><i class="bi bi-linkedin"></i></a>
+                  <a href="https://www.facebook.com/justputoff" target="_blank"><i class="bi bi-facebook"></i></a>
+                  <a href="https://www.instagram.com/justputoff" target="_blank"><i class="bi bi-instagram"></i></a>
+                  <a href="https://x.com/justputoff" target="_blank"><i class="bi bi-twitter-x"></i></a>
                 </div>
               </div>
             </div>
@@ -1046,10 +1046,10 @@
                 <h4>Rahmad Avriantias Aulia</h4>
                 <span>FE Dev / Mobile</span>
                 <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
+                  <a href="https://www.linkedin.com/in/justputoff" target="_blank"><i class="bi bi-linkedin"></i></a>
+                  <a href="https://www.facebook.com/justputoff" target="_blank"><i class="bi bi-facebook"></i></a>
+                  <a href="https://www.instagram.com/justputoff" target="_blank"><i class="bi bi-instagram"></i></a>
+                  <a href="https://x.com/justputoff" target="_blank"><i class="bi bi-twitter-x"></i></a>
                 </div>
               </div>
             </div>
